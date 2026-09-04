@@ -1,0 +1,406 @@
+[
+  {
+    "name": "장원영",
+    "en": "Jang Won-young",
+    "file": "jang_won_young.jpg",
+    "group": "pure_glow",
+    "title": "장원영st 투명 수분광 & 핑크 탕후루",
+    "elements": [
+      "광채 피부",
+      "투명한 베이스",
+      "수분 속광",
+      "핑크 립",
+      "시스루 뱅"
+    ]
+  },
+  {
+    "name": "안유진",
+    "en": "An Yu-jin",
+    "file": "an_yu_jin.jpg",
+    "group": "cheongdam_hair",
+    "title": "안유진st 맑고 건강한 내추럴 레이어드",
+    "elements": [
+      "긴 레이어드 헤어",
+      "페이스라인 컷",
+      "자연스러운 피부결",
+      "또렷한 눈매"
+    ]
+  },
+  {
+    "name": "윈터",
+    "en": "Winter (singer)",
+    "file": "winter_singer.jpg",
+    "group": "clean_girl",
+    "title": "윈터st 백옥 도자기 피부 & 숏단발",
+    "elements": [
+      "도자기 벨벳 피부",
+      "무결점 베이스",
+      "칼단발",
+      "쿨톤 베이스"
+    ]
+  },
+  {
+    "name": "수지",
+    "en": "Bae Suzy",
+    "file": "bae_suzy.jpg",
+    "group": "pure_glow",
+    "title": "수지st 첫사랑 청순 내추럴 페이스",
+    "elements": [
+      "청초한 눈망울",
+      "투명한 베이스",
+      "내추럴 립",
+      "광채 피부"
+    ]
+  },
+  {
+    "name": "한소희",
+    "en": "Han So-hee",
+    "file": "han_so_hee.jpg",
+    "group": "cateye_chic",
+    "title": "한소희st 고혹적인 캣아이 & 음영 스모키",
+    "elements": [
+      "또렷한 눈매",
+      "캣아이 아이라인",
+      "음영 섀도우",
+      "세련된 무드"
+    ]
+  },
+  {
+    "name": "고윤정",
+    "en": "Go Youn-jung",
+    "file": "go_youn_jung.jpg",
+    "group": "pure_glow",
+    "title": "고윤정st 완벽한 대칭 & 독보적 분위기",
+    "elements": [
+      "조화로운 이목구비",
+      "결 브로우",
+      "광채 피부",
+      "누드 립"
+    ]
+  },
+  {
+    "name": "송혜교",
+    "en": "Song Hye-kyo",
+    "file": "song_hye_kyo.jpg",
+    "group": "clean_girl",
+    "title": "송혜교st 우아하고 기품 있는 클래식 룩",
+    "elements": [
+      "단아한 분위기",
+      "무결점 베이스",
+      "우아한 네크라인",
+      "세미매트"
+    ]
+  },
+  {
+    "name": "김지원",
+    "en": "Kim Ji-won",
+    "file": "kim_ji_won.jpg",
+    "group": "seongsu_minimal",
+    "title": "김지원st 세련된 도시미 & 깊은 눈빛",
+    "elements": [
+      "세련된 무드",
+      "음영 섀도우",
+      "또렷한 눈매",
+      "자연스러운 웨이브"
+    ]
+  },
+  {
+    "name": "신세경",
+    "en": "Shin Se-kyung",
+    "file": "shin_se_kyung.jpg",
+    "group": "pure_glow",
+    "title": "신세경st 맑고 투명한 유리알 페이스",
+    "elements": [
+      "투명한 베이스",
+      "수분 속광",
+      "핑크 립",
+      "자연스러운 눈썹"
+    ]
+  },
+  {
+    "name": "박은빈",
+    "en": "Park Eun-bin",
+    "file": "park_eun_bin.jpg",
+    "group": "peach_lovely",
+    "title": "박은빈st 맑고 선한 눈망울 & 미소",
+    "elements": [
+      "사랑스러운 미소",
+      "강아지상 눈매",
+      "투명한 베이스",
+      "시스루 뱅"
+    ]
+  },
+  {
+    "name": "노정의",
+    "en": "Roh Jeong-eui",
+    "file": "roh_jeong_eui.jpg",
+    "group": "pure_glow",
+    "title": "노정의st 정석 인형 비주얼 & 과즙 립",
+    "elements": [
+      "광채 피부",
+      "가닥속눈썹",
+      "핑크 립",
+      "페이스라인 컷"
+    ]
+  },
+  {
+    "name": "채수빈",
+    "en": "Chae Soo-bin",
+    "file": "chae_soo_bin.jpg",
+    "group": "peach_lovely",
+    "title": "채수빈st 동글동글 사랑스러운 토끼상",
+    "elements": [
+      "동그란 눈매",
+      "피치 치크",
+      "핑크 립",
+      "사랑스러운 미소"
+    ]
+  },
+  {
+    "name": "이세영",
+    "en": "Lee Se-young",
+    "file": "lee_se_young.jpg",
+    "group": "hannam_feminine",
+    "title": "이세영st 또렷한 이목구비 & 고전미",
+    "elements": [
+      "또렷한 눈매",
+      "우아한 분위기",
+      "광채 피부",
+      "단아한 헤어"
+    ]
+  },
+  {
+    "name": "김세정",
+    "en": "Kim Se-jeong",
+    "file": "kim_se_jeong.jpg",
+    "group": "peach_lovely",
+    "title": "김세정st 생기발랄 비타민 과즙 페이스",
+    "elements": [
+      "피치 치크",
+      "사랑스러운 미소",
+      "투명한 베이스",
+      "생기 립"
+    ]
+  },
+  {
+    "name": "사나",
+    "en": "Sana (singer)",
+    "file": "sana_singer.jpg",
+    "group": "peach_lovely",
+    "title": "사나st 애교 가득 시바견 러블리상",
+    "elements": [
+      "애교살 글리터",
+      "핑크 립",
+      "피치 치크",
+      "사랑스러운 미소"
+    ]
+  },
+  {
+    "name": "나연",
+    "en": "Nayeon",
+    "file": "nayeon.jpg",
+    "group": "peach_lovely",
+    "title": "나연st 상큼한 과즙상 & 토끼 앞니 미소",
+    "elements": [
+      "과즙 메이크업",
+      "촉촉한 탕후루 립",
+      "피치 치크",
+      "생기 톤업"
+    ]
+  },
+  {
+    "name": "지수",
+    "en": "Jisoo",
+    "file": "jisoo.jpg",
+    "group": "pure_glow",
+    "title": "지수st 단아함과 화려함의 완벽한 조화",
+    "elements": [
+      "조화로운 이목구비",
+      "투명한 베이스",
+      "로즈 립",
+      "긴 생머리"
+    ]
+  },
+  {
+    "name": "제니",
+    "en": "Jennie (singer)",
+    "file": "jennie_singer.jpg",
+    "group": "cateye_chic",
+    "title": "제니st 트렌디한 힙 캣아이 & 베이비페이스",
+    "elements": [
+      "캣아이 아이라인",
+      "오버 립 메이크업",
+      "도회적 시크",
+      "힙 스트리트"
+    ]
+  },
+  {
+    "name": "민지",
+    "en": "Minji (singer)",
+    "file": "minji_singer.jpg",
+    "group": "clean_girl",
+    "title": "민지st K-하이틴 올리비아 핫세 청순",
+    "elements": [
+      "긴 스트레이트 헤어",
+      "결 브로우",
+      "자연스러운 피부결",
+      "투명한 베이스"
+    ]
+  },
+  {
+    "name": "하니",
+    "en": "Hanni (singer)",
+    "file": "hanni_singer.jpg",
+    "group": "peach_lovely",
+    "title": "하니st 통통 튀는 러블리 베이비페이스",
+    "elements": [
+      "피치 치크",
+      "애교살 글리터",
+      "사랑스러운 미소",
+      "과즙 립"
+    ]
+  },
+  {
+    "name": "카즈하",
+    "en": "Kazuha (singer)",
+    "file": "kazuha_singer.jpg",
+    "group": "clean_girl",
+    "title": "카즈하st 발레리나 우아한 목선 & 클린걸",
+    "elements": [
+      "슬릭 로우번",
+      "우아한 네크라인",
+      "자연스러운 피부결",
+      "단아한 분위기"
+    ]
+  },
+  {
+    "name": "태연",
+    "en": "Taeyeon",
+    "file": "taeyeon.jpg",
+    "group": "balletcore",
+    "title": "태연st 요정 같은 뽀얀 쿨톤 & 백옥 피부",
+    "elements": [
+      "쿨톤 베이스",
+      "라벤더 치크",
+      "핑크빔 하이라이터",
+      "투명한 베이스"
+    ]
+  },
+  {
+    "name": "박규영",
+    "en": "Park Gyu-young",
+    "file": "park_gyu_young.jpg",
+    "group": "geek_chic",
+    "title": "박규영st 지적인 긱시크 & 숏컷 매력",
+    "elements": [
+      "긱시크 무드",
+      "쇼트 레이어드",
+      "내추럴 스킨",
+      "무테 안경"
+    ]
+  },
+  {
+    "name": "김소현",
+    "en": "Kim So-hyun",
+    "file": "kim_so_hyun.jpg",
+    "group": "pure_glow",
+    "title": "김소현st 맑고 깊은 눈망울의 청초 페이스",
+    "elements": [
+      "청초한 눈망울",
+      "투명한 베이스",
+      "핑크 립",
+      "긴 생머리"
+    ]
+  },
+  {
+    "name": "조보아",
+    "en": "Jo Bo-ah",
+    "file": "jo_bo_ah.jpg",
+    "group": "hannam_feminine",
+    "title": "조보아st 시원시원한 입체 이목구비",
+    "elements": [
+      "또렷한 눈매",
+      "사랑스러운 미소",
+      "광채 피부",
+      "풍성한 볼륨"
+    ]
+  },
+  {
+    "name": "권나라",
+    "en": "Kwon Nara",
+    "file": "kwon_nara.jpg",
+    "group": "clean_girl",
+    "title": "권나라st 독보적인 비율과 세련된 도회미",
+    "elements": [
+      "도회적 시크",
+      "슬릭 헤어",
+      "무결점 베이스",
+      "또렷한 눈매"
+    ]
+  },
+  {
+    "name": "신민아",
+    "en": "Shin Min-a",
+    "file": "shin_min_a.jpg",
+    "group": "peach_lovely",
+    "title": "신민아st 보조개 미소 & 러블리 베이글",
+    "elements": [
+      "보조개 미소",
+      "피치 치크",
+      "광채 피부",
+      "내추럴 립"
+    ]
+  },
+  {
+    "name": "김태리",
+    "en": "Kim Tae-ri",
+    "file": "kim_tae_ri.jpg",
+    "group": "seongsu_minimal",
+    "title": "김태리st 독보적인 아우라 & 짙은 자연미",
+    "elements": [
+      "자연스러운 눈썹",
+      "깊은 눈빛",
+      "내추럴 스킨",
+      "단아한 분위기"
+    ]
+  },
+  {
+    "name": "박민영",
+    "en": "Park Min-young",
+    "file": "park_min_young.jpg",
+    "group": "hannam_feminine",
+    "title": "박민영st 오피스 여신 & 페이스라인 컬",
+    "elements": [
+      "페이스라인 컷",
+      "에어리 볼륨",
+      "우아한 네크라인",
+      "광채 피부"
+    ]
+  },
+  {
+    "name": "설인아",
+    "en": "Seol In-ah",
+    "file": "seol_in_ah.jpg",
+    "group": "tassel_bob",
+    "title": "설인아st 칼단발 여신 & 건강한 매력",
+    "elements": [
+      "태슬 단발",
+      "칼단발",
+      "자연스러운 피부결",
+      "또렷한 눈매"
+    ]
+  },
+  {
+    "name": "김다미",
+    "en": "Kim Da-mi",
+    "file": "kim_da_mi.jpg",
+    "group": "geek_chic",
+    "title": "김다미st 개성 넘치는 무쌍 & 유니크 페이스",
+    "elements": [
+      "무쌍 매력",
+      "깨끗한 피부",
+      "미니멀 무드",
+      "투명한 베이스"
+    ]
+  }
+]
