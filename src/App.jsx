@@ -149,7 +149,7 @@ export default function App() {
 
   // Analyze DNA Engine based on stacked repetitions
   const handleAnalyzeDna = (overrideIds = null) => {
-    const ids = overrideIds || selectedImageIds;
+    const ids = Array.isArray(overrideIds) ? overrideIds : selectedImageIds;
     const selected = DISCOVERY_IMAGES.filter(img => ids.includes(img.id));
     if (selected.length === 0) {
       showToast('⚠️ 레퍼런스를 최소 1개 이상 선택해주세요.');

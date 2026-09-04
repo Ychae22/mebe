@@ -290,8 +290,8 @@ export default function StyleDiscovery({
             </div>
 
             <button
-              onClick={onAnalyzeDna}
-              className="px-5 py-2.5 rounded-xl bg-white text-black font-extrabold text-xs hover:bg-stone-200 transition-all flex items-center gap-1.5 shadow-xs"
+              onClick={() => onAnalyzeDna && onAnalyzeDna()}
+              className="px-5 py-2.5 rounded-xl bg-white text-black font-extrabold text-xs hover:bg-stone-200 transition-all flex items-center gap-1.5 shadow-xs cursor-pointer"
             >
               <span>추구미 진단서 확인</span>
               <ArrowRight className="w-3.5 h-3.5" />
