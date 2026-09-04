@@ -13,20 +13,129 @@ import {
 
 export default function BeautyDnaReport({ 
   dnaData, 
+  userBeforePhoto,
+  faceScanData,
+  selectedImages = [],
+  onGoToFaceScan,
   onGoToProject, 
   onGoToClinic, 
-  onResetDiscovery 
+  onResetDiscovery,
+  onApplyPreset
 }) {
   if (!dnaData) {
     return (
-      <div className="text-center py-20 px-4">
-        <p className="text-stone-500 mb-4 text-xs font-semibold">아직 분석된 추구미 진단 데이터가 없습니다.</p>
-        <button
-          onClick={onResetDiscovery}
-          className="px-5 py-2.5 rounded-xl bg-black text-white text-xs font-bold"
-        >
-          레퍼런스 수집하러 가기
-        </button>
+      <div className="max-w-4xl mx-auto pb-32">
+        {/* Top Banner */}
+        <div className="border-b border-stone-200 pb-6 mb-7">
+          <div className="flex items-center gap-2 mb-2.5">
+            <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-black text-white">
+              03. ME:BE GAP & CHUGUMI DIAGNOSIS
+            </span>
+            <span className="text-[11px] text-stone-600 font-semibold tracking-wider uppercase">
+              CHEONGDAM AESTHETIC EVALUATION
+            </span>
+          </div>
+          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-black mb-2">
+            나만의 추구미 정밀 진단서
+          </h1>
+          <p className="text-xs sm:text-sm text-stone-600">
+            원하는 추구미 레퍼런스를 기반으로 도달가능미(ME)와의 격차를 정밀 측정하는 공식 리포트입니다.
+          </p>
+        </div>
+
+        {/* Standby Banner Card */}
+        <div className="bg-stone-50 border border-stone-200 rounded-3xl p-8 sm:p-10 text-center mb-8">
+          <div className="w-14 h-14 bg-black text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <Sparkles className="w-7 h-7" />
+          </div>
+          <span className="text-[10px] font-bold tracking-widest text-stone-600 uppercase bg-stone-200/60 px-3 py-1 rounded-full">
+            AWAITING REFERENCE SELECTION · 추구미 선택 대기
+          </span>
+          <h2 className="text-xl sm:text-2xl font-extrabold text-black mt-3 mb-2">
+            아직 선택된 추구미 레퍼런스가 없습니다
+          </h2>
+          <p className="text-xs sm:text-sm text-stone-500 max-w-lg mx-auto mb-6">
+            02단계 아카이브에서 워너비 사진을 선택하시거나, 아래 대표 시그니처 프리셋을 클릭하시면 <strong>1초 만에 맞춤형 진단서가 즉시 발급</strong>됩니다.
+          </p>
+
+          {/* 3 Signature One-Click Presets */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 max-w-2xl mx-auto mb-6 text-left">
+            <button
+              onClick={() => onApplyPreset && onApplyPreset('pure')}
+              className="p-4 rounded-2xl bg-white border border-stone-200 hover:border-black hover:shadow-md transition-all group cursor-pointer"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xl">🌸</span>
+                <span className="text-[9px] font-bold px-2 py-0.5 rounded bg-stone-100 text-stone-800">
+                  수지 · 신세경
+                </span>
+              </div>
+              <h3 className="text-xs font-bold text-black group-hover:text-black">
+                소프트 퓨어 (Soft Pure)
+              </h3>
+              <p className="text-[10px] text-stone-500 mt-1 leading-snug">
+                투명한 수분 베이스 결감과 단아한 자연미
+              </p>
+              <div className="mt-3 text-[10px] font-extrabold text-black flex items-center gap-1">
+                <span>원클릭 진단서 발급</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </button>
+
+            <button
+              onClick={() => onApplyPreset && onApplyPreset('chic')}
+              className="p-4 rounded-2xl bg-white border border-stone-200 hover:border-black hover:shadow-md transition-all group cursor-pointer"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xl">🐱</span>
+                <span className="text-[9px] font-bold px-2 py-0.5 rounded bg-stone-100 text-stone-800">
+                  카리나 · 한소희
+                </span>
+              </div>
+              <h3 className="text-xs font-bold text-black group-hover:text-black">
+                모던 시크 (Modern Chic)
+              </h3>
+              <p className="text-[10px] text-stone-500 mt-1 leading-snug">
+                날렵한 15도 캣아이 눈매와 세련된 입체 윤곽
+              </p>
+              <div className="mt-3 text-[10px] font-extrabold text-black flex items-center gap-1">
+                <span>원클릭 진단서 발급</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </button>
+
+            <button
+              onClick={() => onApplyPreset && onApplyPreset('feminine')}
+              className="p-4 rounded-2xl bg-white border border-stone-200 hover:border-black hover:shadow-md transition-all group cursor-pointer"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xl">🍑</span>
+                <span className="text-[9px] font-bold px-2 py-0.5 rounded bg-stone-100 text-stone-800">
+                  아이유 · 나연
+                </span>
+              </div>
+              <h3 className="text-xs font-bold text-black group-hover:text-black">
+                스위트 페미닌 (Sweet Feminine)
+              </h3>
+              <p className="text-[10px] text-stone-500 mt-1 leading-snug">
+                은은한 피치 생기와 러블리 볼륨 실루엣
+              </p>
+              <div className="mt-3 text-[10px] font-extrabold text-black flex items-center gap-1">
+                <span>원클릭 진단서 발급</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </div>
+            </button>
+          </div>
+
+          {/* Browse Full Archive */}
+          <button
+            onClick={onResetDiscovery}
+            className="px-6 py-3 rounded-xl bg-black hover:bg-stone-800 text-white text-xs font-bold transition-colors inline-flex items-center gap-2 shadow-xs cursor-pointer"
+          >
+            <span>02. 추구미 아카이브에서 직접 50+ 레퍼런스 고르기</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+        </div>
       </div>
     );
   }

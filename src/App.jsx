@@ -74,9 +74,11 @@ export default function App() {
 
   // Safe Navigation with Auto-Validation
   const handleNavigateTab = (tabId) => {
-    if (tabId === 'dna' && selectedImageIds.length === 0 && !dnaData) {
-      showToast('✨ 추구미(BE) 아카이브에서 워너비 레퍼런스를 먼저 1개 이상 선택해주세요.');
-      setActiveTab('discovery');
+    if (tabId === 'dna') {
+      if (!dnaData && selectedImageIds.length > 0) {
+        handleAnalyzeDna(selectedImageIds);
+      }
+      setActiveTab('dna');
       return;
     }
     if (tabId === 'project') {
@@ -125,9 +127,30 @@ export default function App() {
     setSelectedImageIds(targetIds);
   };
 
+  // Instant preset selection & one-click analysis
+  const handleApplyPresetAndAnalyze = (type) => {
+    let targetIds = [];
+    if (type === 'wonyoung' || type === 'pure') {
+      targetIds = ['face-1', 'face-2', 'face-3', 'face-4', 'face-5', 'face-6', 'face-8'];
+      showToast('🌸 소프트 퓨어 추구미 진단서가 즉시 발급되었습니다!');
+    } else if (type === 'haerin' || type === 'chic') {
+      targetIds = ['face-11', 'face-12', 'face-13', 'face-14', 'face-15', 'face-16', 'face-18'];
+      showToast('🐱 모던 시크 추구미 진단서가 즉시 발급되었습니다!');
+    } else if (type === 'iu' || type === 'feminine') {
+      targetIds = ['face-21', 'face-22', 'face-23', 'face-24', 'face-25', 'face-26', 'face-27'];
+      showToast('🍑 스위트 페미닌 추구미 진단서가 즉시 발급되었습니다!');
+    } else if (type === 'jungwon' || type === 'natural') {
+      targetIds = ['face-31', 'face-32', 'face-33', 'face-34', 'face-35', 'face-36', 'face-37'];
+      showToast('☕ 에포트리스 내추럴 추구미 진단서가 즉시 발급되었습니다!');
+    }
+    setSelectedImageIds(targetIds);
+    handleAnalyzeDna(targetIds);
+  };
+
   // Analyze DNA Engine based on stacked repetitions
-  const handleAnalyzeDna = () => {
-    const selected = DISCOVERY_IMAGES.filter(img => selectedImageIds.includes(img.id));
+  const handleAnalyzeDna = (overrideIds = null) => {
+    const ids = overrideIds || selectedImageIds;
+    const selected = DISCOVERY_IMAGES.filter(img => ids.includes(img.id));
     if (selected.length === 0) {
       showToast('⚠️ 레퍼런스를 최소 1개 이상 선택해주세요.');
       return;
@@ -414,6 +437,7 @@ export default function App() {
               faceScanData={faceScanData}
               selectedImages={DISCOVERY_IMAGES.filter(img => selectedImageIds.includes(img.id))}
               onGoToFaceScan={() => setActiveTab('faceScan')}
+              onApplyPreset={handleApplyPresetAndAnalyze}
               onGoToProject={() => {
                 if (!userBeforePhoto) {
                   showToast('📸 30일 컨설팅 로드맵 시작 전, 01단계 내 얼굴 사진(ME)을 먼저 등록해주세요.');
