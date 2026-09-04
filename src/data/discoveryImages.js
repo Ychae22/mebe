@@ -1,5 +1,7 @@
 // Instagram Daily Aesthetic Korean Celebrity & Influencer Faces (ZERO CRINGE, HIGH-END)
-export const DISCOVERY_IMAGES = [
+import { asset } from '../utils/assetUrl';
+
+const RAW_DISCOVERY_IMAGES = [
   {
     "id": "face-1",
     "name": "수지",
@@ -1369,3 +1371,8 @@ export const DISCOVERY_IMAGES = [
     "description": "스트리트 무드와 정돈된 풀뱅 헤어로 개성을 과감하게 표현한 스타일"
   }
 ];
+
+export const DISCOVERY_IMAGES = RAW_DISCOVERY_IMAGES.map(img => ({
+  ...img,
+  imageUrl: asset(img.imageUrl)
+}));

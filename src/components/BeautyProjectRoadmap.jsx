@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React, { useState, useMemo } from 'react';
 import confetti from 'canvas-confetti';
 import { 
@@ -249,7 +250,7 @@ export default function BeautyProjectRoadmap({
   const consultant = project.consultant || {
     name: '김유진 수석 실장',
     role: '청담 살롱 아티스트 & 비주얼 디렉터',
-    avatar: '/images/korean_stars/karina.jpg',
+    avatar: asset('/images/korean_stars/karina.jpg'),
     badge: '1:1 전담 디렉터',
     status: '실시간 피드백 진행 중'
   };

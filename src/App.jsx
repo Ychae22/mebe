@@ -1,3 +1,4 @@
+import { asset } from './utils/assetUrl';
 import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import StyleDiscovery from './components/StyleDiscovery';
@@ -51,7 +52,7 @@ export default function App() {
       id: 'prod-1',
       name: '하이드라 워터 앰플 (50ml)',
       price: 34000,
-      imageUrl: '/images/korean_stars/bae_suzy.jpg',
+      imageUrl: asset('/images/korean_stars/bae_suzy.jpg'),
       dnaMatch: '수분 베이스 솔루션'
     }
   ]);

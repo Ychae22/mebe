@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React, { useMemo } from 'react';
 import { DISCOVERY_IMAGES } from '../data/discoveryImages';
 import { Sparkles, Check, RotateCcw, ArrowRight, SlidersHorizontal } from 'lucide-react';
@@ -219,7 +220,7 @@ export default function StyleDiscovery({
                   loading="lazy"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = '/images/korean_stars/bae_suzy.jpg';
+                    e.target.src = asset('/images/korean_stars/bae_suzy.jpg');
                   }}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

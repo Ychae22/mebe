@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React from 'react';
 import { 
   Sparkles, 
@@ -215,7 +216,7 @@ export default function BeautyDnaReport({
               <div className="flex items-center gap-3.5 mb-3.5">
                 <div className="relative shrink-0">
                   <img
-                    src={selectedImages?.[0]?.imageUrl || '/images/korean_stars/shin_se_kyung.jpg'}
+                    src={selectedImages?.[0]?.imageUrl || asset('/images/korean_stars/shin_se_kyung.jpg')}
                     alt="추구미 레퍼런스"
                     className="w-16 h-20 rounded-xl object-cover border border-white/20 shadow-xs"
                   />

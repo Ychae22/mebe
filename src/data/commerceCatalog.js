@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 export const COMMERCE_CATALOG = {
   beauty: [
     {
@@ -73,7 +74,7 @@ export const COMMERCE_CATALOG = {
       discount: '23%',
       rating: 4.95,
       reviewsCount: 840,
-      imageUrl: '/images/layered_hair.jpg',
+      imageUrl: asset('/images/layered_hair.jpg'),
       dnaMatch: '긴 레이어드 헤어 완벽 구현',
       badge: '예약마감임박'
     },
@@ -136,7 +137,7 @@ export const COMMERCE_CATALOG = {
       discount: '20%',
       rating: 4.88,
       reviewsCount: 520,
-      imageUrl: '/images/feminine_knit.jpg',
+      imageUrl: asset('/images/feminine_knit.jpg'),
       dnaMatch: '슬림 실루엣 / 페미닌 무드',
       badge: 'WEEKLY TOP'
     },
@@ -167,7 +168,7 @@ export const COMMERCE_CATALOG = {
       discount: '18%',
       rating: 4.99,
       reviewsCount: 890,
-      imageUrl: '/images/profile_studio.jpg',
+      imageUrl: asset('/images/profile_studio.jpg'),
       dnaMatch: '30일 뷰티 프로젝트 완주 기념 화보',
       badge: '셀럽 협찬'
     }

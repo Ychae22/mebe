@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React, { useState } from 'react';
 import { X, Sparkles, Send, CheckCircle2, Calendar, MessageSquare, Award, UserCheck, ChevronRight, Zap, ShieldCheck } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const CONSULTANTS = [
     id: 'c-1',
     name: '김유진 수석 아티스트',
     role: '전 청담 보이드 부원장 / 15도 캣아이 & 윤곽 디렉터',
-    avatar: '/images/korean_stars/karina.jpg',
+    avatar: asset('/images/korean_stars/karina.jpg'),
     specialty: '캣아이 아이라인, 슬릭 헤어, 입체 윤곽 컨투어링',
     badge: '아이돌 전담 10년',
     rating: 4.98,
@@ -18,7 +19,7 @@ const CONSULTANTS = [
     id: 'c-2',
     name: '이정훈 스킨 멘토',
     role: '메디컬 스킨케어 디렉터 / 속광 장벽 코치',
-    avatar: '/images/korean_stars/shin_se_kyung.jpg',
+    avatar: asset('/images/korean_stars/shin_se_kyung.jpg'),
     specialty: '속건조 7스킨, 수분 속광, 피부 결 정돈',
     badge: '스킨 솔루션 마스터',
     rating: 4.95,
@@ -30,7 +31,7 @@ const CONSULTANTS = [
     id: 'c-3',
     name: '박서연 원장',
     role: '퍼스널 컬러 & 이미지 브랜딩 디렉터',
-    avatar: '/images/korean_stars/nayeon.jpg',
+    avatar: asset('/images/korean_stars/nayeon.jpg'),
     specialty: '과즙 치크, 톤온톤 립, 퍼스널 스타일 맵핑',
     badge: '이미지 메이킹 12년',
     rating: 4.99,
@@ -42,7 +43,7 @@ const CONSULTANTS = [
     id: 'c-4',
     name: '최민서 총괄 원장',
     role: '청담 웨딩 & VIP 화보 비주얼 디렉터',
-    avatar: '/images/korean_stars/park_min_young.jpg',
+    avatar: asset('/images/korean_stars/park_min_young.jpg'),
     specialty: 'D-30 급속 리셋, 여신 웨이브 펌, 스튜디오 화보',
     badge: 'TOP VIP 디렉터',
     rating: 5.0,

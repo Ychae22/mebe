@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React from 'react';
 import { 
   Scan,
@@ -105,7 +106,7 @@ export default function Sidebar({
           <div className="flex items-center gap-2.5 mb-2">
             <div className="relative">
               <img
-                src="/images/korean_stars/karina.jpg"
+                src={asset("/images/korean_stars/karina.jpg")}
                 alt="김유진 실장"
                 className="w-8 h-8 rounded-full object-cover border border-stone-200"
               />

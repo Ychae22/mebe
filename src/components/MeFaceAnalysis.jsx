@@ -1,3 +1,4 @@
+import { asset } from '../utils/assetUrl';
 import React, { useState, useEffect } from 'react';
 import { 
   Camera, 
@@ -23,7 +24,7 @@ const DEMO_PRESETS = [
     id: 'preset-1',
     label: '샘플 A (둥근형/내추럴)',
     desc: '중안부 여백 & 부드러운 오벌',
-    photoUrl: '/images/korean_stars/park_gyu_young.jpg',
+    photoUrl: asset('/images/korean_stars/park_gyu_young.jpg'),
     landmarks: {
       hairlineYPct: 22,
       browYPct: 39,
@@ -48,7 +49,7 @@ const DEMO_PRESETS = [
     id: 'preset-2',
     label: '샘플 B (슬릭형/도회적)',
     desc: '샤프 V라인 & 세미 캣아이',
-    photoUrl: '/images/korean_stars/kim_da_mi.jpg',
+    photoUrl: asset('/images/korean_stars/kim_da_mi.jpg'),
     landmarks: {
       hairlineYPct: 20,
       browYPct: 38,
@@ -73,7 +74,7 @@ const DEMO_PRESETS = [
     id: 'preset-3',
     label: '샘플 C (클래식/내추럴)',
     desc: '황금 균형비 & 단아한 결',
-    photoUrl: '/images/korean_stars/kim_goeun.jpg',
+    photoUrl: asset('/images/korean_stars/kim_goeun.jpg'),
     landmarks: {
       hairlineYPct: 23,
       browYPct: 41,

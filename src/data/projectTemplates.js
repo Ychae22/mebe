@@ -1,5 +1,7 @@
 // 5 Rich, Distinct 30-Day Beauty Project Templates
-export const PROJECT_TEMPLATES = [
+import { asset } from '../utils/assetUrl';
+
+const RAW_PROJECT_TEMPLATES = [
   {
     id: 'proj-pure-glow',
     title: '[소프트 퓨어] 수분 베이스 & 결 정돈 30일 컨설팅 로드맵',
@@ -522,4 +524,12 @@ export const PROJECT_TEMPLATES = [
   }
 ];
 
+// Export with asset helper
+export const PROJECT_TEMPLATES = RAW_PROJECT_TEMPLATES.map(p => ({
+  ...p,
+  coverImage: asset(p.coverImage),
+  consultant: p.consultant ? { ...p.consultant, avatar: asset(p.consultant.avatar) } : p.consultant
+}));
+
 export const DEFAULT_30_DAY_PROJECT = PROJECT_TEMPLATES[0];
+
